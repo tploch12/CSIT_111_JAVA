@@ -1,0 +1,20 @@
+package com.example.hw1;
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+public class HW1 extends Application {
+    public void start(Stage primaryStage) {
+        Text name = new Text(35, 50, "Name: Timothy Ploch");
+        Text email = new Text(175, 125, "Email: plocht@montclair.edu");
+        Text major = new Text(350, 195, "Major: Computer Science");
+        Group root = new Group(name, email, major);
+        Scene scene = new Scene (root, 500, 250, Color.GOLD);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setTitle("My homework assignment");
+    }
+}
